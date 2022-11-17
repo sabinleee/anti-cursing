@@ -59,15 +59,14 @@ anti_cursing("나는 너가 좋지만, 너는 너무 개새끼야")
 ```
 
 # Model-comparison
-
-| Classification | KcElectra | KoBERT | RoBERTa-large | etc(maybe further more) |
+| Classification | KcElectra | KoBERT | RoBERTa-base | RoBERTa-large |
 | --- | --- | --- | --- | --- |
-| Validation Accuracy | | | | |
-| Validation Loss | | | | |
-| Training Loss | | | | |
-| Epoch | | | | |
-| Batch-size | | | | |
-| transformers | | | | |
+| Validation Accuracy | 0.88680 | 0.85721 | 0.83421 | 0.86994 |
+| Validation Loss | 1.00431 | 1.23237 | 1.30012 | 1.16179 |
+| Training Loss | 0.09908 | 0.03761 | 0.0039 | 0.06255 |
+| Epoch | 10 | 40 | 20 | 20 |
+| Batch-size | 8 | 32 | 16 | 32 |
+| transformers | beomi/KcELECTRA-base | skt/kobert-base-v1 | xlm-roberta-base | klue/roberta-large |
 
 # Dataset
 * ### Smilegate-AI 
@@ -118,7 +117,7 @@ Click here to see the License information --> [License](LICENSE)
   * Seonghwan Kim, Seongwon Lee, and Seungwon Do. 2019. Korean Unsmile Dataset. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 1–11.
 # Project-status
 
-![10%](https://geps.dev/progress/10)
+![50%](https://geps.dev/progress/50)
 
 # Future-work
 update soon plz bare with me 🙏🏻
@@ -183,15 +182,15 @@ anti_cursing("나는 너가 좋지만, 너는 너무 개새끼야")
 ```
 
 # 모델 성능 비교
-
-| Classification | KcElectra | KoBERT | RoBERTa-large | 기타(추가예정) |
+| Classification | KcElectra | KoBERT | RoBERTa-base | RoBERTa-large |
 | --- | --- | --- | --- | --- |
-| Validation Accuracy | | | | |
-| Validation Loss | | | | |
-| Training Loss | | | | |
-| Epoch | | | | |
-| Batch-size | | | | |
-| transformers | | | | |
+| Validation Accuracy | 0.88680 | 0.85721 | 0.83421 | 0.86994 |
+| Validation Loss | 1.00431 | 1.23237 | 1.30012 | 1.16179 |
+| Training Loss | 0.09908 | 0.03761 | 0.0039 | 0.06255 |
+| Epoch | 10 | 40 | 20 | 20 |
+| Batch-size | 8 | 32 | 16 | 32 |
+| transformers | beomi/KcELECTRA-base | skt/kobert-base-v1 | xlm-roberta-base | klue/roberta-large |
+
 
 # 데이터셋
 * ### Smilegate-AI 
@@ -242,7 +241,7 @@ anti_cursing("나는 너가 좋지만, 너는 너무 개새끼야")
   * Seonghwan Kim, Seongwon Lee, and Seungwon Do. 2019. Korean Unsmile Dataset. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 1–11.
 # 진행상황
 
-![10%](https://geps.dev/progress/10)
+![50%](https://geps.dev/progress/50)
 
 # 발전
 앞으로 추가될 예정입니다 잠시만 기다려주세요🙏🏻
