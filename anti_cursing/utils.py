@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
 from lib import *
 
 class myDataset(torch.utils.data.Dataset):
@@ -12,20 +16,20 @@ class myDataset(torch.utils.data.Dataset):
         return len(self.encoding['input_ids'])
 
 
-class anti_cursing:
-    def __init__(self, BASE_PATH=os.getcwd()) -> None:
+class antiCursing:
+    def __init__(self, BASE_PATH=os.path.abspath(os.path.dirname(__file__))) -> None:
         self.BASE_PATH = BASE_PATH
         self.model = AutoModelForSequenceClassification.from_pretrained(self.BASE_PATH + "/binary_classification")
         self.multi_model = AutoModelForSequenceClassification.from_pretrained(self.BASE_PATH + "/multi_classification")
         self.tokenizer = AutoTokenizer.from_pretrained(self.BASE_PATH + "/tokenizer_KcElectra")
-        self.emoji = pd.read_csv(self.BASE_PATH + "/Dataset/emoji_category.csv")
+        self.emoji = pd.read_csv(self.BASE_PATH + "/dataset/emoji_category.csv")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.TAG_LIST = ["JKS","JKC","JKG","JKO","JKB","JKV","JKQ","JX","JC","EP","EF","EC","ETN","ETM","SF","SE","SSO","SSC","SC","SY", "VV"]
         self.mmscaler = MinMaxScaler()
         self.columns = ['악플/욕설', '인종/국적', '개인지칭', '연령', '남성', '여성/가족', '성소수자', '지역', '기타 혐오', '종교']
 
         self.model.eval()
-
+            
     def pass_model(self, token):
         with torch.no_grad():
             output = self.model(**token)
@@ -168,3 +172,27 @@ class anti_cursing:
 
         return sent_split
 
+
+    def anti_cur(self, sentence):
+        triger = 0
+        new_comment = ""
+        for sent in self.split_sentence(sentence):
+            batch_sentence_prediction, updated_trgier = self.sentence_predict(sent, triger)
+            
+            if type(batch_sentence_prediction) == str:
+                new_comment += (" " + batch_sentence_prediction)
+                continue
+
+            for word in batch_sentence_prediction:
+                if word[:2] == "##":
+                    new_comment += word[2:]
+                else:
+                    new_comment += (" " + word)
+        
+            triger = updated_trgier
+
+        if triger == 0:
+            return(new_comment)
+        if triger > 0:
+            return(new_comment)
+            

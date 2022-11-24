@@ -1,3 +1,4 @@
-from anti_cursing import utils
+from anti_cursing.utils import antiCursing
 
-utils.anti_cursing('시발!')
+temp = antiCursing()
+print(temp.anti_cur("씨발"))
