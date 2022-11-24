@@ -19,9 +19,9 @@ class myDataset(torch.utils.data.Dataset):
 class antiCursing:
     def __init__(self, BASE_PATH=os.path.abspath(os.path.dirname(__file__))) -> None:
         self.BASE_PATH = BASE_PATH
-        self.model = AutoModelForSequenceClassification.from_pretrained(self.BASE_PATH + "/binary_classification")
-        self.multi_model = AutoModelForSequenceClassification.from_pretrained(self.BASE_PATH + "/multi_classification")
-        self.tokenizer = AutoTokenizer.from_pretrained(self.BASE_PATH + "/tokenizer_KcElectra")
+        self.model = AutoModelForSequenceClassification.from_pretrained("24bean/kcelectra_senti_binary")
+        self.multi_model = AutoModelForSequenceClassification.from_pretrained("24bean/multi_classification")
+        self.tokenizer = AutoTokenizer.from_pretrained("24bean/tokenizer_KcElectra")
         self.emoji = pd.read_csv(self.BASE_PATH + "/dataset/emoji_category.csv")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.TAG_LIST = ["JKS","JKC","JKG","JKO","JKB","JKV","JKQ","JX","JC","EP","EF","EC","ETN","ETM","SF","SE","SSO","SSC","SC","SY", "VV"]
