@@ -254,7 +254,7 @@ antiCursing.anti_cur("나는 너가 좋지만, 너는 너무 개새끼야")
   * Seonghwan Kim, Seongwon Lee, and Seungwon Do. 2019. Korean Unsmile Dataset. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 1–11.
 # 진행상황
 
-![50%](https://geps.dev/progress/50)
+![80%](https://geps.dev/progress/80)
 
 # 발전
 앞으로 추가될 예정입니다 잠시만 기다려주세요🙏🏻
