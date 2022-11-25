@@ -8,10 +8,13 @@ setup(
     name="anti-cursing",   # pypi 에 등록할 라이브러리 이름
     version="0.0.1",    # pypi 에 등록할 version (수정할 때마다 version up을 해줘야 함)
     description="The package that detect & switch the curse word in the sentence by using deep learning",
+    long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
     author="24_bean",
     author_email="sabin5105@gmail.com",
     url="https://github.com/sabin5105/anti-cursing",
     python_requires=">= 3.8",
+    install_requires=["transformers", "torch", "pandas", "numpy", ],
     packages=find_packages(),
     install_requires=[],
     zip_safe=False,
