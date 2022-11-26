@@ -4,8 +4,6 @@
 
 You just install the package the way you install any other package and then you can use it in your code.
 
-The whole thing is gonna be updated soon.
-
 So this is __**the very first idea**__
 
 But you can find my package in pypi(https://pypi.org/project/anti-cursing/0.0.1/)
@@ -36,7 +34,6 @@ Additionally, instead of changing malicious words to special characters such as 
 - [Dataset](#dataset)
 - [Used API](#used-api)
 - [License](#license)
-- [Working Example](#working-example)
 - [References](#references)
 - [Project Status](#project-status)
 - [Future Work](#future-work)
@@ -50,7 +47,7 @@ You can install the package using pip:
 pip install anti-cursing
 ```
 
-**it doesn't work yet, but it will soon!!👨🏻‍💻**
+https://user-images.githubusercontent.com/50198431/204080173-6542f90c-ff37-4fe0-bfe3-b82620b02274.mp4
 
 # Usage
 
@@ -63,6 +60,8 @@ antiCursing.anti_cur("나는 너가 좋지만, 너는 너무 개새끼야")
 ```bash
 나는 너가 좋지만, 너는 너무 👼🏻야
 ```
+
+https://user-images.githubusercontent.com/50198431/204080186-6ba66d00-b076-4256-9c0d-32120740ffcb.mp4
 
 # Model-comparison
 | Classification | KcElectra | KoBERT | RoBERTa-base | RoBERTa-large |
@@ -94,9 +93,6 @@ antiCursing.anti_cur("나는 너가 좋지만, 너는 너무 개새끼야")
 This repository is licensed under the MIT license. See LICENSE for details.
 
 Click here to see the License information --> [License](LICENSE)
-
-# Working-example
----- some video is gonna be placed here ----
 
 # References
 
@@ -137,14 +133,11 @@ update soon plz bare with me 🙏🏻
 
 다른 패키지를 설치하는 방식과 동일하게 패키지를 설치한 다음 코드에서 사용할 수 있습니다.
 
-아직 아이디어 구상 단계이기 때문에 **아무것도 작동하지 않지만** 곧 작동하도록 업데이트할 예정입니다.
-
 Pypi(https://pypi.org/project/anti-cursing/0.0.1/)에 패키지르 업로드했습니다. 확인하시 수 있습니다.
 
 **🙏🏻패키지를 처음 설치하시고 사용하실 때 딥러닝 모델을 불러오기 위해 huggingface에서 parsing을 시도합니다. 처음에만 해당 작업이 필요하니 시간이 조금 걸림과 용량을 차지함을 고려해주세요**
 
 <img width="1134" alt="image" src="https://user-images.githubusercontent.com/50198431/203723736-3aeb84a1-6418-4190-b967-2888e14b14fd.png">
-
 
 <hr>
 
@@ -167,7 +160,6 @@ Pypi(https://pypi.org/project/anti-cursing/0.0.1/)에 패키지르 업로드했�
 - [데이터셋](#데이터셋)
 - [사용 API](#사용-api)
 - [License](#license)
-- [작동 예시](#작동-예시)
 - [참고문헌](#참고문헌)
 - [진행상황](#진행상황)
 - [발전](#발전)
@@ -180,7 +172,7 @@ pip를 사용하여 패키지를 설치할 수 있습니다.
 pip install anti-cursing
 ```
 
-**아직 아무것도 작동하지 않지만, 곧 작동하도록 업데이트할 예정입니다👨🏻‍💻.**
+https://user-images.githubusercontent.com/50198431/204080250-4096d3d2-c51d-4d22-9756-312c6fd0aedc.mp4
 
 # 사용법
 
@@ -193,6 +185,9 @@ antiCursing.anti_cur("나는 너가 좋지만, 너는 너무 개새끼야")
 ```bash
 나는 너가 좋지만, 너는 너무 👼🏻야
 ```
+
+https://user-images.githubusercontent.com/50198431/204080262-c50bd5a2-345b-4265-a952-812abb3d9702.mp4
+
 
 # 모델 성능 비교
 | Classification | KcElectra | KoBERT | RoBERTa-base | RoBERTa-large |
@@ -225,9 +220,6 @@ antiCursing.anti_cur("나는 너가 좋지만, 너는 너무 개새끼야")
 이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 LICENSE 파일을 참고해주세요.
 
 라이센스 정보 --> [License](LICENSE)
-
-# 작동 예시
----- 작동 예시가 추가될 예정입니다 ----
 
 # 참고문헌
 
