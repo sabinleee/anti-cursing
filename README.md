@@ -6,7 +6,7 @@ You just install the package the way you install any other package and then you 
 
 So this is __**the very first idea**__
 
-But you can find my package in pypi(https://pypi.org/project/anti-cursing/0.0.1/)
+But you can find my package in pypi(https://pypi.org/project/anti-cursing/0.0.2/)
 
 **🙏🏻Plz bare with the program to install model's weight and bias from huggingface at the first time you use the package.**
 
@@ -133,7 +133,7 @@ update soon plz bare with me 🙏🏻
 
 다른 패키지를 설치하는 방식과 동일하게 패키지를 설치한 다음 코드에서 사용할 수 있습니다.
 
-Pypi(https://pypi.org/project/anti-cursing/0.0.1/)에 패키지르 업로드했습니다. 확인하시 수 있습니다.
+Pypi(https://pypi.org/project/anti-cursing/0.0.2/)에 패키지르 업로드했습니다. 이곳에서 확인하실 수 있습니다.
 
 **🙏🏻패키지를 처음 설치하시고 사용하실 때 딥러닝 모델을 불러오기 위해 huggingface에서 parsing을 시도합니다. 처음에만 해당 작업이 필요하니 시간이 조금 걸림과 용량을 차지함을 고려해주세요**
 
